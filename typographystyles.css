@@ -1,0 +1,179 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, hsl(221, 100%, 52%), rgb(166, 212, 255));
+    min-height: 100vh;
+}
+
+.design {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: clamp(10rem 40vw 20rem);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 200 200 200;
+    width: 600px; 
+    row-gap: 15px;   
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    translate: -50%;
+}
+
+.main-advocacy {
+    font-family: rubik puddles;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: .2rem;
+    line-height: 1;
+    color: rgb(253, 245, 230);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home-tomorrow-column {
+    display: grid;
+    grid-template-columns: 138px 1fr;
+    text-align: left;
+}
+
+.home-tomorrow-top{
+    font-size: 80px;
+    margin-left: 20px;
+    font-family: Impact;
+    background-image: url(images/labrador.avif);
+    background-size: cover;
+    background-position: 10% 30%;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px #ffffff48;
+    color: transparent;
+    
+}
+
+.home-tomorrow-shadow{
+    font-size: 80px;
+    margin-left: 158px;
+    font-family: Impact;
+    color: transparent;
+    position: absolute;
+    z-index: -1;
+    text-shadow: 0px 0px 10px #1986ec, 0px 0px 12px #ffffff;
+}
+
+.every-pet {
+    letter-spacing: 4px;
+    padding-left: 5px;
+}
+
+.home, .home-shadow {
+    padding-left: 18px;
+}
+
+.A {
+    font-size: 80pt;
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 40px;
+    transform: rotate(355deg);
+}
+
+.subtext-1,.subtext-2 {
+    color: rgb(253, 245, 230);
+    font-family: pridi;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.adopt-today {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .2rem;  
+    color: rgb(245, 236, 220);
+}  
+
+.and {
+    font-size: 45pt;
+    position: absolute;
+    top: 275px;
+    left: 610px;
+    transform: rotate(5deg);
+}
+
+.house {
+    width: 1000px;
+    position: relative;
+}
+
+.dog-cat {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    translate: -50% -50%;
+}
+
+/* Animations */
+
+.design {
+    animation: jackInTheBox; 
+    animation-duration: 3s;
+}
+
+.main-advocacy {
+    animation: jackInTheBox;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.A {
+    animation: shake-lr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.and {
+    animation: swing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: -7.2s;
+}
+
+.home {
+    animation: pulse; 
+    animation-duration: 5.5s;
+    animation-delay: -3.2s;
+}
+
+.tomorrow {
+    animation: pulse; 
+    animation-duration: 5.7s;
+    animation-delay: -3s;
+}
+
+.subtext-2 {
+    animation: fadeIn; 
+    animation-duration: 5s;
+}
+
+.adopt-today {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color: rgb(245, 236, 220);}
+    20%  {color: yellow;}
+    40%  {color: rgb(10, 117, 0);}
+    60% {color: rgba(18, 87, 236, 0.671);}
+    80% {color: rgb(236, 18, 152);}
+    100% {color: rgb(236, 149, 18);}
+}
