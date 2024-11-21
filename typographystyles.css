@@ -106,6 +106,7 @@ body {
     top: 275px;
     left: 610px;
     transform: rotate(5deg);
+    padding-top: 10px;
 }
 
 .house {
